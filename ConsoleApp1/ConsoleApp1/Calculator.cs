@@ -22,14 +22,15 @@
                     Double.TryParse(Console.ReadLine(), out num1);
                 }
                 else Console.Write($"Tal 1 är: {num1}");
+                Console.Write("Ange räknesätt: ");
                 string thingToDo = Console.ReadLine();
                 Console.Write("Skriv tal 2:");
                 Double.TryParse(Console.ReadLine(), out num2);
 
-                if (thingToDo == "+") Add(num1, num2);
-                else if (thingToDo == "-") Subtract(num1, num2);
-                else if (thingToDo == "/") Divide(num1, num2);
-                else if (thingToDo == "*") Multiply(num1, num2);
+                if (thingToDo == "+") num1 = Add(num1, num2);
+                else if (thingToDo == "-") num1 = Subtract(num1, num2);
+                else if (thingToDo == "/") num1 = Divide(num1, num2);
+                else if (thingToDo == "*") num1 = Multiply(num1, num2);
                 else if (thingToDo == "c") num1 = 0;
                 else if (thingToDo == "x") dontExit = true;
 
