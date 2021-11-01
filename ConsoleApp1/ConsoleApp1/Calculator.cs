@@ -22,8 +22,8 @@
                     Double.TryParse(Console.ReadLine(), out num1);
                 }
                 else Console.Write($"Tal 1 är: {num1}");
-                Console.Write("Skriv tal 2:");
                 string thingToDo = Console.ReadLine();
+                Console.Write("Skriv tal 2:");
                 Double.TryParse(Console.ReadLine(), out num2);
 
                 if (thingToDo == "+") Add(num1, num2);
