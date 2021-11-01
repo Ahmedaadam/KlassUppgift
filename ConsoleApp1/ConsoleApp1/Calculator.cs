@@ -10,7 +10,12 @@
     {
         public static void Run()
         {
+            double num1, num2;
 
+            Console.WriteLine("Skriv tal 1:");
+            Double.TryParse(Console.ReadLine(), out num1);
+            Console.WriteLine("Skriv tal 2:");
+            Double.TryParse(Console.ReadLine(), out num2);
         }
         private static double Add(double a, double b)
         {
