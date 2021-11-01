@@ -22,7 +22,7 @@
                     Console.Write("Skriv tal 1: ");
                     Double.TryParse(Console.ReadLine(), out num1);
                 }
-                else Console.Write($"Tal 1 är: {num1}\n");
+                else Console.Write($"Resultatet är: {num1}\n");
                 Console.Write("Ange räknesätt: ");
                 string thingToDo = Console.ReadLine();
                 if (thingToDo != "x" && thingToDo != "c")
@@ -35,8 +35,7 @@
                 else if (thingToDo == "/") num1 = Divide(num1, num2);
                 else if (thingToDo == "*") num1 = Multiply(num1, num2);
                 else if (thingToDo == "c") num1 = 0;
-                else if (thingToDo == "x") dontExit = true;
-
+                else if (thingToDo == "x") dontExit = false;
             }
         }
         private static double Add(double a, double b)
