@@ -16,5 +16,9 @@
         {
             return a + b;
         }
+        private static double Divide(double a, double b)
+        {
+            return a / b;
+        }
     }
 }
