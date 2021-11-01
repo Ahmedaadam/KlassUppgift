@@ -10,10 +10,14 @@
     {
         public static void Run()
         {
-            double num1, num2;
+            double num1 = 0;
+            double num2;
 
-            Console.WriteLine("Skriv tal 1:");
-            Double.TryParse(Console.ReadLine(), out num1);
+            if (num1 != 0)
+            {
+                Console.WriteLine("Skriv tal 1:");
+                Double.TryParse(Console.ReadLine(), out num1);
+            }
             Console.WriteLine("Skriv tal 2:");
             Double.TryParse(Console.ReadLine(), out num2);
         }
