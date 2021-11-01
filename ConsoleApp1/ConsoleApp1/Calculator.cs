@@ -1,10 +1,6 @@
 ﻿namespace ConsoleApp1
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public static class Calculator
     {
@@ -41,7 +37,7 @@
                     num1 = 0;
                     firstTime = true;
                 }
-                else if (thingToDo == "x") dontExit = true;
+                else if (thingToDo == "x") dontExit = false;
 
             }
         }
@@ -66,6 +62,6 @@
         {
             return a * b;
         }
-        
+
     }
 }
