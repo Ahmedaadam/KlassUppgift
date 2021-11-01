@@ -6,11 +6,15 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class Calculator
+    public static class Calculator
     {
-        public void Run()
+        public static void Run()
         {
 
+        }
+        private static double Add(double a, double b)
+        {
+            return a + b;
         }
     }
 }
