@@ -16,7 +16,7 @@
 
             while (dontExit)
             {
-                if (num1 != 0)
+                if (num1 == 0)
                 {
                     Console.Write("Skriv tal 1: ");
                     Double.TryParse(Console.ReadLine(), out num1);
