@@ -16,5 +16,22 @@
         {
             return a + b;
         }
+
+
+        private static double Subtract(double a, double b)
+        {
+            return a - b;
+        }
+
+        private static double Divide(double a, double b)
+        {
+            return a / b;
+
+        }
+
+        private static double Multiply(double a, double b)
+        {
+            return a * b;
+        }
     }
 }
