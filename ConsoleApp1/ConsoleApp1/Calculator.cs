@@ -21,7 +21,7 @@
                     firstTime = false;
                 }
                 else Console.Write($"Resultatet är: {num1}\n");
-                Console.Write("Ange räknesätt: ");
+                Console.Write("Ange räknesätt: (+, -, *, /,^ (c = rensa, x = avsluta)");
                 string thingToDo = Console.ReadLine();
                 if (thingToDo != "x" && thingToDo != "c")
                 {
@@ -32,6 +32,7 @@
                 else if (thingToDo == "-") num1 = Subtract(num1, num2);
                 else if (thingToDo == "/") num1 = Divide(num1, num2);
                 else if (thingToDo == "*") num1 = Multiply(num1, num2);
+                else if (thingToDo == "^") num1 = PowerOf(num1, num2);
                 else if (thingToDo == "c")
                 {
                     num1 = 0;
@@ -41,6 +42,12 @@
 
             }
         }
+
+        private static double PowerOf(double num1, double num2)
+        {
+            return Math.Pow(num1, num2);
+        }
+
         private static double Add(double a, double b)
         {
             return a + b;
