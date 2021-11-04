@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Yeayeayea
+    class GoogleSum
     {
         public int value = 0;
 
-        public Yeayeayea()
+        public GoogleSum()
         {
             WebClient client = new WebClient();
             string str = client.DownloadString("http://www.gooogle.com");
