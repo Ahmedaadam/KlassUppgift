@@ -10,7 +10,7 @@ namespace ConsoleApp1
 {
     class Yeayeayea
     {
-        int value = 0;
+        public int value = 0;
 
         public Yeayeayea()
         {
